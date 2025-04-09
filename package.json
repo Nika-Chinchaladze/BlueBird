@@ -1,0 +1,17 @@
+{
+  "name": "bluebird",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "html:report": "npx playwright show-report",
+    "html:clean": "rd /s /q playwright-report && rd /s /q test-results"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.51.1",
+    "@types/node": "^22.14.0"
+  }
+}
