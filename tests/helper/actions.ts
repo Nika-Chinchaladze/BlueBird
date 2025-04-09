@@ -2,7 +2,7 @@ import { Locator } from '@playwright/test';
 import { BaseHelp } from './base';
 
 export class Actions extends BaseHelp {
-  async goto(url: string): Promise<void> {
+  async navigateToUrl(url: string): Promise<void> {
     await this.page.goto(url, { waitUntil: 'domcontentloaded' });
   }
 

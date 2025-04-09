@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "test:bluebird": "npx playwright test --grep @bluebird",
     "html:report": "npx playwright show-report",
     "html:clean": "rd /s /q playwright-report && rd /s /q test-results"
   },
