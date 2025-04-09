@@ -2,19 +2,17 @@ import { defineConfig, devices } from '@playwright/test';
 
 export default defineConfig({
   testDir: './tests',
-  fullyParallel: true,
   timeout: 50000,
-  retries: 2,
+  retries: 1,
   use: {
-    headless: false,
+    headless: true,
     viewport: { width: 1280, height: 720 },
-    ignoreHTTPSErrors: true,
-    trace: 'retain-on-failure',
+    trace: 'on-first-retry',
     screenshot: 'only-on-failure',
   },
   reporter: [
     ['list'],
-    ['html', { outputFolder: 'test-results' }],
+    ['html'],
   ],
   projects: [
     {

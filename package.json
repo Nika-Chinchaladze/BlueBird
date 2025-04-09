@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test:bluebird": "npx playwright test --grep @bluebird",
+    "test:bluebird-ui": "npx playwright test --grep @bluebird --ui",
     "html:report": "npx playwright show-report",
     "html:clean": "rd /s /q playwright-report && rd /s /q test-results"
   },
